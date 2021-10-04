@@ -36,11 +36,13 @@ case peak: 2020-09-26
 case peak: 2021-01-10 <-
 case peak: 2021-05-09 <-
 case peak: 2021-08-23 <-
+
+The lag time between infections and deaths is 19 days, 15 days, and 16 days respectively.
 </pre>
 
-The number of death peak is [88 92 54].
+The number of every death peak is [88 92 54].
 
-The number of case peak is [526 4421 5902 20029]
+The number of every case peak is [526 4421 5902 20029]
 
 Therefore, death rate of peaks is 88/4421=0.019, 92/5902=0.015, 54/20029=0.0026 respectively.
 
@@ -49,20 +51,34 @@ Therefore, death rate of peaks is 88/4421=0.019, 92/5902=0.015, 54/20029=0.0026 
 $ covidlag 'United States' 600 13 L
 
 <img src='United States.png' height=480 width=640>
-This example shows that r-squared of infections: and r-squared of deaths:
+This example shows that r-squared of infections:0.803 and r-squared of deaths:0.733
 
-
-
+The death peaks are [71 189 337 470 579]
+<pre>
 death peak: 2020-04-23
 death peak: 2020-08-19
 death peak: 2021-01-14
 death peak: 2021-05-27
 death peak: 2021-09-13
+
+The case peaks are [52 156 315 448 566]
+
 case peak: 2020-04-04
 case peak: 2020-07-17
 case peak: 2020-12-23
 case peak: 2021-05-05
 case peak: 2021-08-31
+</pre>
+
+The lag time between infections and deaths is 19 days, 33 days, 22 days, 22 days, 13 days.
+
+
+The number of every death peak is [1944 1005 3109 632 1943].
+
+The number of every case peak is [28858 57877 207829 44827 178454]
+
+The death rate per infection is 1944/28858=0.067,1005/57877=0.017,3109/207829=0.015,632/44827=0.014,1943/178454=0.011
+
 
 $ covidlag Canada 400 13 L
 
