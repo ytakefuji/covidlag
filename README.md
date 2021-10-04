@@ -46,11 +46,11 @@ The number of every case peak is [526 4421 5902 20029]
 
 Therefore, death rate of peaks is 88/4421=0.019, 92/5902=0.015, 54/20029=0.0026 respectively.
 
-<img src='Japan.png' height=480 width=640>
+<img src='https://github.com/ytakefuji/covidlag/raw/main/Japan.png' height=480 width=640>
 
 $ covidlag 'United States' 600 13 L
 
-<img src='United States.png' height=480 width=640>
+<img src='https://github.com/ytakefuji/covidlag/raw/main/United States.png' height=480 width=640>
 This example shows that r-squared of infections:0.803 and r-squared of deaths:0.733
 
 The death peaks are [71 189 337 470 579]
@@ -82,7 +82,7 @@ The death rate per infection is 1944/28858=0.067,1005/57877=0.017,3109/207829=0.
 
 $ covidlag Canada 400 13 L
 
-<img src='Canada.png' height=480 width=640>
+<img src='https://github.com/ytakefuji/covidlag/raw/main/Canada.png' height=480 width=640>
 <pre>
 death peak: 2020-09-07
 death peak: 2021-01-06
