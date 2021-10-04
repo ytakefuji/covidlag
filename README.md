@@ -4,9 +4,10 @@ This repository proposes a new tool covidlag for analyzing a lag time
 between infection peaks and death peaks. 
 Covidlang is a open-source program which can provide the lag time and 
 the death rate per infection.
+
 Polynomial curve-fitting algorithm is used for detecting infection peaks and death peaks.
 The lag time is a difference between a infection peak and a death peak.
-The death rate per infection is also calculated.
+The average death rate per infection can be also calculated.
 In shorter lag time, we must treat infected patients in urgent manners.
 In longer lag time, we must provide sufficient hospital accomodation.
 In higher death rate per infection, we must strengthen policies.
