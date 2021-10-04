@@ -23,6 +23,13 @@ of polynomial curve-fitting, and options (L: left, R: right, C: center):
 
 $ covidlag Japan 400 13 L
 
+This example shows the 13th degree polynomial curve-fitting has 
+r-squared of infections:0.923 and r-squared of deaths:0.706.
+The death peaks are [152 267 374].
+The case peaks are [27 133 252 258].
+The number of death peak is [88 92 54].
+The number of case peak is [526 4421 5902 20029]
+
 <img src='Japan.png' height=480 width=640>
 
 $ covidlag 'United States' 600 13 L
