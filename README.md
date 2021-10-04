@@ -14,11 +14,13 @@ In higher death rate per infection, we must strengthen policies.
 
 # How to install covidlag
 Covidlag is available in public and can be installed by the PyPI packaging:
+
 $ pip install covidlag
 
 # How to run covidlag
 Run the following command composed of the country name, sampled days, the degree
 of polynomial curve-fitting, and options (L: left, R: right, C: center):
+
 $ covidlag Japan 400 13 L
 
 <img src='Japan.png' height=480 width=640>
