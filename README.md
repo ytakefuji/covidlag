@@ -93,6 +93,6 @@ case peak: 2020-12-26
 case peak: 2021-04-21
 case peak: 2021-09-19
 </pre>
-The lag time is 11 days, 17 days.
+The lag time is 11 days, 17 days,...
 
-The death rate per infection is 0.018,0.006,0.0085.
+The death rate per infection is 0.018,0.006,...
