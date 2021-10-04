@@ -83,7 +83,7 @@ The death rate per infection is 1944/28858=0.067,1005/57877=0.017,3109/207829=0.
 $ covidlag Canada 400 13 L
 
 <img src='Canada.png' height=480 width=640>
-
+<pre>
 death peak: 2020-09-07
 death peak: 2021-01-06
 death peak: 2021-05-08
@@ -92,3 +92,7 @@ case peak: 2020-09-07
 case peak: 2020-12-26
 case peak: 2021-04-21
 case peak: 2021-09-19
+</pre>
+The lag time is 11 days, 17 days.
+
+The death rate per infection is 0.018,0.006,0.0085.
