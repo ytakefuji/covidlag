@@ -21,12 +21,12 @@ Run the following command composed of the country name, sampled days, the degree
 of polynomial curve-fitting, and options (L: left, R: right, C: center):
 $ covidlag Japan 400 13 L
 
-<img src='Japan.png' height=240 width=320>
+<img src='Japan.png' height=480 width=640>
 
 $ covidlag 'United States' 600 13 L
 
-<img src='United States.png' height=240 width=320>
+<img src='United States.png' height=480 width=640>
 
 $ covidlag Canada 400 13 L
 
-<img src='Canada.png' height=240 width=320>
+<img src='Canada.png' height=480 width=640>
