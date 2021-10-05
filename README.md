@@ -17,16 +17,19 @@ https://www.cdc.gov/foodnet/reports/data/case-fatality.html
 the CFR is calculated by:
 (number of cases in which patient died/number of cases).
 
-The CDC method is appropriate for annual statistics, 
+The CDC method for CFR is appropriate for annual statistics, 
 but not for time series data analysis.
 
-Although R is not accurate, the peak of a time series infection can be 
-calculated by a curve fitting function.
+You must understand that R is an imprecise estimate. 
+R is not a good indicator unless all individuals are tested several times a day.
 
-In the proposed algorithm, the peak of a time series infection and 
-that of a time series death are calculated by two curve fitting functions.
+In the proposed algorithm, multiple peaks of time series daily infection and 
+mutiple peaks of time series daily death are calculated by two curve 
+fitting functions respectively.
 
-The difference between the peak of infection and death indicates a time lag.
+The peak of infection is associated with the peak of its death.
+
+The difference between the peak of infection and that of death indicates a time lag.
 
 The death rate per infection or case fatality ratio (CFR) can be also calculated by
 dividing the number of peak deaths by the number of peak infections.
