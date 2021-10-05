@@ -53,23 +53,32 @@ The lag time is a difference between a infection peak and a death peak.
 
 case fatality ratio (CFR) can be also calculated by the peak infection and the peak death.
 
-In shorter lag time, we must treat infected patients in urgent manners.
-In longer lag time, we must provide sufficient hospital accomodation for patients.
-In higher death rate per infection, we must strengthen policies.
+When the lag time is shortened, infected patients must be treated urgently.
+
+With a longer time lag, we have to provide adequate hospitals for patients.
+
+When the death rate per infection or the CFR is high, 
+the policy needs to be strengthened.
 
 # How to install covidlag
-Covidlag is available in public and can be installed by the PyPI packaging:
+Covidlag is available in public and can be installed by the following 
+PyPI packaging command:
 
 $ pip install covidlag
 
 # How to run covidlag
+covidlag needs at least three parameters (country name, sampled days, 
+regression polinomial degree).
+
 Run the following command composed of the country name, sampled days, the degree
 of polynomial curve-fitting, and options (L: left, R: right, C: center):
 
 $ covidlag Japan 400 13 L
 
-This example shows the 13th degree polynomial curve-fitting using 400 days has 
-r-squared of infections:0.923 and r-squared of deaths:0.706.
+This example is for "Japan" with the "13th" degree polynomial curve-fitting using 
+"400" sampled days. 
+The result shows the polynomial curve-fitting that r-squared of infections 
+is 0.923 and r-squared of deaths is 0.706.
 <pre>
 The death peaks are [152 267 374].
 death peak: 2021-01-29 <-
@@ -82,14 +91,18 @@ case peak: 2021-01-10 <-
 case peak: 2021-05-09 <-
 case peak: 2021-08-23 <-
 
-The lag time between infections and deaths is 19 days, 15 days, and 16 days respectively.
+The lag time between infections and deaths is 152-133=19 days, 267-252=15 days, 
+and 374-258=16 days respectively.
 </pre>
 
 The number of every death peak is [88 92 54].
 
 The number of every case peak is [526 4421 5902 20029]
 
-Therefore, death rate of peaks is 88/4421=0.019, 92/5902=0.015, 54/20029=0.0026 respectively.
+Therefore, death rate of peaks or CFR is 88/4421=0.019, 92/5902=0.015, and
+54/20029=0.0026 respectively.
+
+The CFR is significantly decreasing.
 
 <img src='https://github.com/ytakefuji/covidlag/raw/main/Japan.png' height=480 width=640>
 
@@ -122,8 +135,10 @@ The number of every death peak is [1944 1005 3109 632 1943].
 
 The number of every case peak is [28858 57877 207829 44827 178454]
 
-The death rate per infection is 1944/28858=0.067,1005/57877=0.017,3109/207829=0.015,632/44827=0.014,1943/178454=0.011
+The death rate per infection is 1944/28858=0.067,1005/57877=0.017,
+3109/207829=0.015,632/44827=0.014,1943/178454=0.011
 
+CFR is slowly decreasing.
 
 $ covidlag Canada 400 13 L
 
