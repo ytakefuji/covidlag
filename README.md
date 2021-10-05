@@ -20,6 +20,7 @@ We must understand that CFR is an imprecise estimate.
 
 According to CDC:
 https://www.cdc.gov/foodnet/reports/data/case-fatality.html
+
 the CFR is calculated by:
 (number of cases in which patient died/number of cases).
 
