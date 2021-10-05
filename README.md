@@ -1,4 +1,8 @@
 # covidlag
+covidlag is available in public and can be installed by the PyPI 
+package command (pip).
+The detailed is under review.
+
 Data science is useful to investigate the progression of the pandemic. 
 This repository proposes a new tool covidlag for analyzing a lag time 
 between infection peaks and death peaks. 
