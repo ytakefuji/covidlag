@@ -138,7 +138,7 @@ The number of every case peak is [28858 57877 207829 44827 178454]
 The death rate per infection is 1944/28858=0.067,1005/57877=0.017,
 3109/207829=0.015,632/44827=0.014,1943/178454=0.011
 
-CFR is slowly decreasing.
+CFR in the US is slowly decreasing. But, it is still high compared with that of Japan.
 
 $ covidlag Canada 400 13 L
 
