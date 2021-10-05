@@ -11,8 +11,6 @@ The detailed method is under review.
 Data science is useful to investigate the progression of the pandemic. 
 This repository proposes a new tool covidlag for analyzing a lag time 
 between infection peaks and death peaks. 
-Covidlang is a open-source program which can provide the lag time and 
-the death rate per infection.
 
 Polynomial curve-fitting algorithm is used for detecting infection peaks and death peaks.
 The lag time is a difference between a infection peak and a death peak.
