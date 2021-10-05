@@ -1,7 +1,12 @@
 # covidlag
-covidlag is available in public and can be installed by the PyPI 
-package command (pip).
-The detailed is under review.
+covidlag is an open-source program which is available in public and 
+can be installed by the PyPI package command (pip).
+covidlag can calculate the lag time between infection peaks and death peaks.
+covidlag can also compute death rate per infection or case fatality ratio (CFR).
+CFR is the proportion of individuals diagnosed with a disease who die from 
+that disease and is therefore a measure of severity among detected cases.
+
+The detailed method is under review.
 
 Data science is useful to investigate the progression of the pandemic. 
 This repository proposes a new tool covidlag for analyzing a lag time 
