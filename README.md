@@ -7,10 +7,14 @@ CFR is the proportion of individuals diagnosed with a disease who die from
 that disease and is therefore a measure of severity among detected cases.
 
 CFR is a dynamic value depending on the environment, 
-but the current computation of CFR is not accurate. 
+but the current computation of CFR is not suitable for time series data. 
+
 Because CFR is deterimined by imprecise estimate, R (reproduction number).
+
 Unless all individuals are tested several times a day, 
 the number of infected individuals or that of cases is not accurate.
+
+We must understand that CFR is an imprecise estimate. 
 
 According to CDC:
 https://www.cdc.gov/foodnet/reports/data/case-fatality.html
@@ -19,9 +23,6 @@ the CFR is calculated by:
 
 The CDC method for CFR is appropriate for annual statistics, 
 but not for time series data analysis.
-
-You must understand that R is an imprecise estimate. 
-R is not a good indicator unless all individuals are tested several times a day.
 
 In the proposed algorithm, multiple peaks of time series daily infection and 
 mutiple peaks of time series daily death are calculated by two curve 
