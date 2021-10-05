@@ -1,4 +1,6 @@
 # covidlag
+Data science is useful to investigate the progression of the pandemic. 
+
 covidlag is an open-source program which is available in public and 
 can be installed by the PyPI package command (pip).
 covidlag can calculate the lag time between infection peaks and death peaks.
@@ -9,7 +11,7 @@ that disease and is therefore a measure of severity among detected cases.
 CFR is a dynamic value depending on the environment, 
 but the current computation of CFR is not suitable for time series data. 
 
-Because CFR is deterimined by imprecise estimate, R (reproduction number).
+Because CFR is deterimined by imprecise cases.
 
 Unless all individuals are tested several times a day, 
 the number of infected individuals or that of cases is not accurate.
@@ -24,6 +26,11 @@ the CFR is calculated by:
 The CDC method for CFR is appropriate for annual statistics, 
 but not for time series data analysis.
 
+In the current CFR calculation, we need to determine the range of sampled days. 
+The start and end dates have a significant impact on the CFR results.
+
+There is no algorithm to select the optimal range of sampled days.
+
 In the proposed algorithm, multiple peaks of time series daily infection and 
 mutiple peaks of time series daily death are calculated by two curve 
 fitting functions respectively.
@@ -35,17 +42,19 @@ The difference between the peak of infection and that of death indicates a time 
 The death rate per infection or case fatality ratio (CFR) can be also calculated by
 dividing the number of peak deaths by the number of peak infections.
 
+In the proposed algorithm, the peak of infection is strongly correlated 
+with the peak of death.
+
 The detailed method is under review.
 
-Data science is useful to investigate the progression of the pandemic. 
-This repository proposes a new tool covidlag for analyzing a lag time 
-between infection peaks and death peaks. 
-
 Polynomial curve-fitting algorithm is used for detecting infection peaks and death peaks.
+
 The lag time is a difference between a infection peak and a death peak.
-The average death rate per infection can be also calculated.
+
+case fatality ratio (CFR) can be also calculated by the peak infection and the peak death.
+
 In shorter lag time, we must treat infected patients in urgent manners.
-In longer lag time, we must provide sufficient hospital accomodation.
+In longer lag time, we must provide sufficient hospital accomodation for patients.
 In higher death rate per infection, we must strengthen policies.
 
 # How to install covidlag
