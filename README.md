@@ -22,7 +22,7 @@ According to CDC:
 https://www.cdc.gov/foodnet/reports/data/case-fatality.html
 
 the CFR is calculated by:
-(number of cases in which patient died/number of cases).
+CFR=(number of cases in which patient died/number of cases).
 
 The CDC method for CFR is appropriate for annual statistics, 
 but not for time series data analysis.
