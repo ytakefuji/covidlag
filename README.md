@@ -6,6 +6,23 @@ covidlag can also compute death rate per infection or case fatality ratio (CFR).
 CFR is the proportion of individuals diagnosed with a disease who die from 
 that disease and is therefore a measure of severity among detected cases.
 
+CFR is a dynamic value depending on the environment, 
+but the current computation of CFR is not accurate. 
+Because CFR is deterimined by imprecise estimate, R (reproduction number).
+Unless all individuals are tested several times a day, 
+the number of infected individuals or that of cases is not accurate.
+
+Although R is not accurate, the peak of a time series infection can be 
+calculated by a curve fitting function.
+
+In the proposed algorithm, the peak of a time series infection and 
+that of a time series death are calculated by two curve fitting functions.
+
+The difference between the peak of infection and death indicates a time lag.
+
+The death rate per infection or case fatality ratio (CFR) can be calculated by
+dividing the number of peak deaths by the number of peak infections.
+
 The detailed method is under review.
 
 Data science is useful to investigate the progression of the pandemic. 
