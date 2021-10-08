@@ -8,15 +8,9 @@ covidlag can also compute death rate per infection or case fatality ratio (CFR).
 CFR is the proportion of individuals diagnosed with a disease who die from 
 that disease and is therefore a measure of severity among detected cases.
 
-CFR is a dynamic value depending on the environment, 
-but the current computation of CFR is not suitable for time series data. 
-
-Because CFR is deterimined by imprecise cases.
-
-Unless all individuals are tested several times a day, 
-the number of infected individuals or that of cases is not accurate.
-
-We must understand that CFR is an imprecise estimate. 
+CFR is a dynamic value which is continuously changing. 
+In the conventional methods, CFR is used for retrospective observational studies 
+and are not suitable for continuous time series data.  
 
 According to CDC:
 https://www.cdc.gov/foodnet/reports/data/case-fatality.html
@@ -27,39 +21,21 @@ CFR=(number of cases in which patient died/number of cases).
 The CDC method for CFR is appropriate for annual statistics, 
 but not for time series data analysis.
 
-In the current CFR calculation, we need to determine the range of sampled days. 
-The start and end dates have a significant impact on the CFR results.
+In the current CFR calculation, we need to determine two indicators: the number of sampled days and its range of start and ending dates. 
 
-There is no algorithm to select the optimal range of sampled days.
+Two indicators significantly influence CFR.
+
+There is no algorithm to select two appropriate indicators.
+
+The proposed algorithm is based on a robust correlation between infection and death.
 
 In the proposed algorithm, multiple peaks of time series daily infection and 
 mutiple peaks of time series daily death are calculated by two curve 
 fitting functions respectively.
 
-The peak of infection is associated with the peak of its death.
-
-The difference between the peak of infection and that of death indicates a time lag.
-
-The death rate per infection or case fatality ratio (CFR) can be also calculated by
-dividing the number of peak deaths by the number of peak infections.
-
-In the proposed algorithm, the peak of infection is strongly correlated 
-with the peak of death.
 
 The detailed method is under review.
 
-Polynomial curve-fitting algorithm is used for detecting infection peaks and death peaks.
-
-The lag time is a difference between a infection peak and a death peak.
-
-case fatality ratio (CFR) can be also calculated by the peak infection and the peak death.
-
-When the lag time is shortened, infected patients must be treated urgently.
-
-With a longer time lag, we have to provide adequate hospitals for patients.
-
-When the death rate per infection or the CFR is high, 
-the policy needs to be strengthened.
 
 # How to install covidlag
 Covidlag is available in public and can be installed by the following 
