@@ -25,13 +25,13 @@ In the current CFR calculation, we need to determine two indicators: the number 
 
 Two indicators significantly influence CFR.
 
+COVID-19 variants and vaccinations can significantly change the lag time and the CFR so that the convetional distribution approaches are not suitable for ongoing time series data.
+
 There is no algorithm to select two appropriate indicators.
 
 The proposed algorithm is based on a robust correlation between infection and death.
 
-In the proposed algorithm, multiple peaks of time series daily infection and 
-mutiple peaks of time series daily death are calculated by two curve 
-fitting functions respectively.
+The extreme values such as maxima and minima can be used for computing the accurate lag time and the CFR.
 
 
 The detailed method is under review.
