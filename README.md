@@ -50,6 +50,62 @@ regression polinomial degree).
 Run the following command composed of the country name, sampled days, the degree
 of polynomial curve-fitting, and options (L: left, R: right, C: center):
 
+$ covidlag 'United States' 600 13 L
+
+<img src='https://github.com/ytakefuji/covidlag/raw/main/United States.png' height=480 width=640>
+This example shows that r-squared of infections:0.803 and r-squared of deaths:0.733
+
+The death peaks are [ 66, 182, 332, 464, 574].
+The case peaks are [ 47, 150, 309, 441, 562].
+<pre>
+maxima information
+death peak: 2020-04-23
+death peak: 2020-08-17
+death peak: 2021-01-14
+death peak: 2021-05-26
+death peak: 2021-09-13
+case peak: 2020-04-04
+case peak: 2020-07-16
+case peak: 2020-12-22
+case peak: 2021-05-03
+case peak: 2021-09-01
+maxiddeath (array([ 66, 182, 332, 464, 574]),)
+maxidcase (array([ 47, 150, 309, 441, 562]),)
+ydeath[maxiddeath] [1963 1010 3105  627 1915]
+ycase[maxidcase] [ 32699  59662 207017  43332 177464]
+==================================
+minima information
+death minima: 2020-03-02
+death minima: 2020-06-26
+death minima: 2020-10-07
+death minima: 2021-04-26
+death minima: 2021-07-17
+death minima: 2021-09-28
+case minima: 2020-02-28
+case minima: 2020-05-11
+case minima: 2020-09-09
+case minima: 2021-04-12
+case minima: 2021-06-28
+case minima: 2021-09-29
+miniddeath (array([ 14, 130, 233, 434, 516, 589]),)
+minidcase (array([ 11,  84, 205, 420, 497, 590]),)
+ydeath[miniddeath] [-284  594  682  540  113 1735]
+ycase[minidcase] [-16493  13753  31474  41737  12714  88203]
+</pre>
+
+The lag time between infections and deaths using maxima is 66-47=19 days, 182-150=32 days, 332-309=23 days, 464-441=23 days, 574-562=12 days.
+
+
+The number of every death peak is [1963 1010 3105  627 1915].
+
+The number of every case peak is [ 32699  59662 207017  43332 177464].
+
+The death rate per infection is 1963/32699=0.060,1010/59662=0.017,
+3105/207017=0.015,627/43332=0.014,1915/177464=0.011
+
+CFR in the US is slowly decreasing. But, it is still high compared with that of Japan.
+
+
 $ covidlag Japan 400 13 L
 
 This example is for "Japan" with the "13th" degree polynomial curve-fitting using 
@@ -82,40 +138,6 @@ Therefore, death rate of peaks or CFR is 88/4421=0.019, 92/5902=0.015, and
 The CFR is significantly decreasing.
 
 <img src='https://github.com/ytakefuji/covidlag/raw/main/Japan.png' height=480 width=640>
-
-$ covidlag 'United States' 600 13 L
-
-<img src='https://github.com/ytakefuji/covidlag/raw/main/United States.png' height=480 width=640>
-This example shows that r-squared of infections:0.803 and r-squared of deaths:0.733
-
-The death peaks are [71 189 337 470 579]
-<pre>
-death peak: 2020-04-23
-death peak: 2020-08-19
-death peak: 2021-01-14
-death peak: 2021-05-27
-death peak: 2021-09-13
-
-The case peaks are [52 156 315 448 566]
-
-case peak: 2020-04-04
-case peak: 2020-07-17
-case peak: 2020-12-23
-case peak: 2021-05-05
-case peak: 2021-08-31
-</pre>
-
-The lag time between infections and deaths is 19 days, 33 days, 22 days, 22 days, 13 days.
-
-
-The number of every death peak is [1944 1005 3109 632 1943].
-
-The number of every case peak is [28858 57877 207829 44827 178454]
-
-The death rate per infection is 1944/28858=0.067,1005/57877=0.017,
-3109/207829=0.015,632/44827=0.014,1943/178454=0.011
-
-CFR in the US is slowly decreasing. But, it is still high compared with that of Japan.
 
 $ covidlag Canada 400 13 L
 
