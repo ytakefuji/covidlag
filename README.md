@@ -1,4 +1,6 @@
 # covidlag
+This is under review for possible publication.
+
 Data science is useful to investigate the progression of the pandemic. 
 
 covidlag is an open-source program which is available in public and 
