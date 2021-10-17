@@ -1,6 +1,8 @@
 # covidlag
 This is under review for possible publication.
 
+covidlag has been downloaded by 2897 users worldwide as of Oct.16 2021.
+
 Data science is useful to investigate the progression of the pandemic. 
 
 covidlag is an open-source program which is available in public and 
