@@ -1,7 +1,7 @@
 # covidlag
 This is under review for possible publication.
 
-covidlag has been downloaded by 3150 users worldwide.
+covidlag has been downloaded by 3267 users worldwide.
 
 Data science is useful to investigate the progression of the pandemic. 
 
