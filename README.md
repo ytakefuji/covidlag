@@ -1,4 +1,4 @@
-# covidlag
+# covidlag 
 This is under review for possible publication.
 
 covidlag has been downloaded by 3267 users worldwide.
