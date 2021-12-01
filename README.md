@@ -2,7 +2,7 @@
 The paper was published in IJTM:
 Takefuji Y. Python Programming in PyPI for Translational Medicine. International Journal of Translational Medicine. 2021; 1(3):323-331. https://doi.org/10.3390/ijtm1030019 
 
-covidlag has been downloaded by 4262 users worldwide.
+covidlag has been downloaded by 4266 users worldwide.
 
 Data science is useful to investigate the progression of the pandemic. 
 
