@@ -4,6 +4,8 @@ Takefuji Y. Python Programming in PyPI for Translational Medicine. International
 
 covidlag has been downloaded by 5970 users worldwide.
 
+Another is under review.
+
 Data science is useful to investigate the progression of the pandemic. 
 
 covidlag is an open-source program which is available in public and 
