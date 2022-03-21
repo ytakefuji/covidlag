@@ -50,6 +50,8 @@ PyPI packaging command:
 
 $ pip install covidlag
 
+$ pip install covidlag --force-reinstall --no-cache-dir --no-binary :all:
+
 # How to run covidlag
 covidlag needs at least three parameters (country name, sampled days, 
 regression polinomial degree).
