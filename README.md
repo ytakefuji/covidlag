@@ -1,4 +1,6 @@
 # covidlag 
+[![Open in Code Ocean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/40b2361d-b5c9-43b4-820c-b767ea1a6e9a/tree)
+
 The paper was published in IJTM:
 Takefuji Y. Python Programming in PyPI for Translational Medicine. International Journal of Translational Medicine. 2021; 1(3):323-331. https://doi.org/10.3390/ijtm1030019 
 
